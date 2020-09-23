@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JS Syntax</title>
+
+        <script>
+            let str1 = "lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+            
+            function forLoop(iter) {
+                for(i = 0; i < iter; i++){
+                    document.getElementById("oRes").innerHTML += str1 + "<br>";
+                    // document.getElementById("oRes").innerHTML = str1 + "<br>";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <input type="number" id="iLoop" placeholder="Type number of iteration" style="width: 500px">
+        <button type="button" onclick='forLoop(document.getElementById("iLoop").value)'>Go</button>
+        
+        <p id="oRes"></p>
+    </body>
+    
+</html>

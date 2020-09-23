@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript css class Introduction</title>
+        
+        <style>
+            .makeRed {
+            color: blue;
+            }
+
+            .hide {
+            visibility: hidden;
+            }
+
+            .show {
+            visibility: visible;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button type="button" onclick='document.getElementById("cLine1").className = "makeRed"'>Go</button>
+
+        <p id="cLine1">Lorem ipsum dolor sit amet, consectur adipiscing elit.</p>
+        
+        <button type="button" onclick='document.getElementById("cLine2").className = "hide"'>hide this</button>
+        <button type="button" onclick='document.getElementById("cLine2").className = "show"'>show this</button>
+
+        <p id="cLine2">Lorem ipsum dolor sit amet, consectur adipiscing elit.</p>
+        <p id="#">Lorem ipsum dolor sit amet, consectur adipiscing elit.</p>
+        
+    </body>
+</html>

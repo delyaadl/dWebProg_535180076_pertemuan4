@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JS Invocation Pattern</title>
+
+        <script>
+            var add = function(num1, num2){
+                return num1 + num2;
+            }
+            
+            function getResult(){
+                array = [3,4]; // value untuk parameter
+                return add.apply(null, array);  // fungsi apply digunakan untuk melakukan mapping antara array  dengan parameter fungsi 'add'
+            }
+        </script>
+    </head>
+
+    <body>
+        <button type="button" onclick='document.getElementById("oRes").innerHTML = getResult();'>additionn</button>
+        
+        <br>
+        
+        <p id="oRes"></p>
+    </body>
+    
+</html>

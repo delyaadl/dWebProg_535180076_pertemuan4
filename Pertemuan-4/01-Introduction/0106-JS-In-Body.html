@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Javascript in body Introduction</title>
+
+        <style>
+            .makeRed {
+            color: red;
+            }
+
+            .hide {
+            visibility: hidden;
+            }
+
+            .show {
+            visibility: visible;
+            }
+        </style>
+
+        
+    </head>
+
+    <body>
+        <button type="button" onclick='changeLine1Style()'>Go</button>
+        <p id="cLine1">Lorem ipsum dolor sit amet, consectur adipiscing elit.</p>
+        
+        <button type="button" onclick='changeStyle("cLine2", "hide")'>Hide this</button>
+        <button type="button" onclick='changeStyle("cLine2", "show")'>Show this</button>
+        <p id="cLine2">Lorem ipsum dolor sit amet, consectur adipiscing elit. Lorem ipsum dolor sit amet, consectur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectur adipiscing elit.</p>
+        
+        <script>
+            function changeLine1Style() {
+                document.getElementById("cLine1").className = "makeRed";
+            }
+
+            function changeStyle(id, classname){
+                document.getElementById(id).className = classname;
+            }
+        </script>
+    </body>
+    
+</html>

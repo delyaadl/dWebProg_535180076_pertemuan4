@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JS Invocation Pattern</title>
+
+        <script>
+            function base(){
+                this.value = 500;
+            }
+            
+            var child = new base(); // constructor invocation
+        </script>
+    </head>
+
+    <body>
+        <button type="button" onclick='document.getElementById("oRes").innerHTML= child.value;'>addition</button>
+        <br>
+        <p id="oRes"></p>
+    </body>
+    
+</html>
